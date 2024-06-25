@@ -19,7 +19,7 @@ class Todo(db.Model):
 #     db.create_all() 
 
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 
 def index():
     return render_template('index.html')
